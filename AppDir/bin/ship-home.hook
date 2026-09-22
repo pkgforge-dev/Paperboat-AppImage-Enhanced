@@ -1,0 +1,3 @@
+#!/bin/sh
+export SHIP_HOME="${SHIP_HOME:-$DATADIR/paperboat}"
+mkdir -p "$SHIP_HOME"

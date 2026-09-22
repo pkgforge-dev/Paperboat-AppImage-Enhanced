@@ -1,0 +1,11 @@
+--- a/src/port/Engine.cpp
++++ b/src/port/Engine.cpp
+@@ -191,7 +191,7 @@
+ #endif
+ 
+     this->context = Ship::Context::CreateUninitializedInstance(
+-        "Paperboat", "boat", Ship::Context::GetPathRelativeToAppDirectory("paperboat.cfg.json")
++        "Paperboat", "boat", "paperboat.cfg.json"
+     );
+     gShipContext = this->context;
+ 
