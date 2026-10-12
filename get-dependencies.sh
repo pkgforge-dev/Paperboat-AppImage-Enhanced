@@ -34,7 +34,6 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./PaperBoat
-patch -Np1 -i ../patches/001-paperboat-config-path.patch
 
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release -j"$(nproc)"
